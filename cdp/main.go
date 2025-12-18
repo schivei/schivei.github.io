@@ -27,7 +27,16 @@ func main() {
 
 	time.Sleep(1000)
 
-	ctx, cancel := chromedp.NewContext(context.Background())
+	// Create an exec allocator with Chrome flags to disable sandbox for CI environments
+	opts := append(chromedp.DefaultExecAllocatorOptions[:],
+		chromedp.Flag("no-sandbox", true),
+		chromedp.Flag("disable-setuid-sandbox", true),
+		chromedp.Flag("disable-dev-shm-usage", true),
+	)
+	allocCtx, allocCancel := chromedp.NewExecAllocator(context.Background(), opts...)
+	defer allocCancel()
+
+	ctx, cancel := chromedp.NewContext(allocCtx)
 	defer cancel()
 
 	fmt.Print("generating './static/resume.pdf'... ")
