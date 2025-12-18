@@ -27,12 +27,15 @@ func main() {
 
 	time.Sleep(1000)
 
-	// Create an exec allocator with Chrome flags to disable sandbox for CI environments
-	opts := append(chromedp.DefaultExecAllocatorOptions[:],
-		chromedp.Flag("no-sandbox", true),
-		chromedp.Flag("disable-setuid-sandbox", true),
-		chromedp.Flag("disable-dev-shm-usage", true),
-	)
+	// Create an exec allocator; only disable sandbox when running in CI
+	opts := chromedp.DefaultExecAllocatorOptions[:]
+	if os.Getenv("CI") == "true" || os.Getenv("GITHUB_ACTIONS") == "true" {
+		opts = append(opts,
+			chromedp.Flag("no-sandbox", true),
+			chromedp.Flag("disable-setuid-sandbox", true),
+			chromedp.Flag("disable-dev-shm-usage", true),
+		)
+	}
 	allocCtx, allocCancel := chromedp.NewExecAllocator(context.Background(), opts...)
 	defer allocCancel()
 
