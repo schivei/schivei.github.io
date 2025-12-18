@@ -39,6 +39,48 @@ To find challenging job opportunities to develop my experience in the software e
 # Work Experience
 <br/>
 
+## Ticket Edenred
+*System Specialist*: leading and development of systems integrations.<br/>  
+Jan. 2026
+
+### Stack
+- C#
+- PHP
+- Node.JS
+- MySQL
+- Postgres
+- Azure
+- AWS
+- K8S
+- Azure DevOps
+
+### Projects
+- Mundi
+- Saxo
+
+<hr/>
+
+## Levva
+*Sr Software Engineer Tech Lead*: leading and development of systems integrations.<br/>  
+Oct. 2024 - Jan. 2026
+
+### Stack
+- C#
+- PHP
+- Node.JS
+- MySQL
+- Postgres
+- Azure
+- AWS
+- K8S
+- Azure DevOps
+
+### Projects
+- Mundi
+- Saxo
+
+<hr/>
+
 ## Clinicorp
 *Sr Software Engineer Tech Lead*: development of management system for dental clinics.<br/>  
 Oct. 2023 - Sep. 2024
