@@ -38,6 +38,48 @@ Encontrar oportunidades de trabalho desafiadoras para desenvolver minha experiê
 # Experiências de Trabalho
 <br/>
 
+## Ticket Edenred
+*Especialista de Sistemas*: Liderança e Desenvolvimento de sistemas integrados.<br/>  
+Jan. 2026
+
+### Stack
+- C#
+- PHP
+- Node.JS
+- MySQL
+- Postgres
+- Azure
+- AWS
+- K8S
+- Azure DevOps
+
+### Projects
+- Mundi
+- Saxo
+
+<hr/>
+
+## Levva
+*Engenheiro de Software Sênior e Líder Técnico*: Liderança e Desenvolvimento de sistemas integrados.<br/>  
+Oct. 2024 - Jan. 2026
+
+### Stack
+- C#
+- PHP
+- Node.JS
+- MySQL
+- Postgres
+- Azure
+- AWS
+- K8S
+- Azure DevOps
+
+### Projects
+- Mundi
+- Saxo
+
+<hr/>
+
 ## Clinicorp
 *Engenheiro de Software Sênior e Líder Técnico*: desenvolvimento de sistema de gestão para clínicas odontológicas.<br/>  
 Out. 2023 - Set. 2024
